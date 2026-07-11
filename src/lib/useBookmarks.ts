@@ -11,6 +11,8 @@ export function useBookmarks() {
   useEffect(() => {
     try {
       const raw = localStorage.getItem(KEY);
+      // Client-only hydration of persisted bookmarks after mount; intentional.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       if (raw) setIds(JSON.parse(raw));
     } catch {
       // ignore malformed storage

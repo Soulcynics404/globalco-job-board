@@ -7,6 +7,8 @@ export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // Client-only read of the theme applied pre-paint; intentional post-mount sync.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setDark(document.documentElement.classList.contains("dark"));
     setMounted(true);
   }, []);
