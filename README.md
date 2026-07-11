@@ -55,11 +55,22 @@
 
 ---
 
-## 🖼️ Overview
+## 🖼️ Screenshots
 
-| Home — hero, search & filters | Job detail — apply & save |
-| --- | --- |
-| Browse all openings in a responsive grid with live search, faceted filters, a live result count, and a friendly empty state. | Each role has full responsibilities, qualifications and preferred attributes, a sticky overview sidebar, an apply modal with file uploads, save and share. |
+### Home — hero, search & filters
+<p align="center">
+  <img src="docs/screenshots/home-desktop.png" alt="Globalco job board — home page" width="100%" />
+</p>
+
+### Job detail — responsibilities, overview sidebar, apply & save
+<p align="center">
+  <img src="docs/screenshots/job-detail.png" alt="Globalco job board — job detail page" width="100%" />
+</p>
+
+### Mobile — fully responsive
+<p align="center">
+  <img src="docs/screenshots/home-mobile.png" alt="Globalco job board — mobile view" width="320" />
+</p>
 
 > _Open the [live demo](https://globalco-job-board.vercel.app) for the full interactive experience._
 
