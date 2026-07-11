@@ -72,12 +72,14 @@ export function JobList({
         <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3">
           <Select
             label="Country"
+            placeholder="All countries"
             value={filters.country ?? ""}
             onChange={(v) => setFilters((f) => ({ ...f, country: v || null }))}
             options={countryOptions}
           />
           <Select
             label="Category"
+            placeholder="All categories"
             value={filters.category ?? ""}
             onChange={(v) =>
               setFilters((f) => ({ ...f, category: (v || null) as Category | null }))
@@ -86,6 +88,7 @@ export function JobList({
           />
           <Select
             label="Shift"
+            placeholder="All shifts"
             value={filters.shift ?? ""}
             onChange={(v) =>
               setFilters((f) => ({ ...f, shift: (v || null) as Shift | null }))
@@ -148,11 +151,13 @@ export function JobList({
 
 function Select({
   label,
+  placeholder,
   value,
   onChange,
   options,
 }: {
   label: string;
+  placeholder: string;
   value: string;
   onChange: (v: string) => void;
   options: string[];
@@ -166,7 +171,7 @@ function Select({
         aria-label={label}
         className="w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20"
       >
-        <option value="">All {label.toLowerCase()}s</option>
+        <option value="">{placeholder}</option>
         {options.map((o) => (
           <option key={o} value={o}>
             {o}

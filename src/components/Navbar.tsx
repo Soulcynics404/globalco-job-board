@@ -33,7 +33,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-7 text-base font-medium text-foreground lg:flex">
+        <nav className="hidden items-center gap-6 text-sm font-medium text-foreground lg:flex">
           {NAV.map((item) =>
             item.active ? (
               <Link key={item.label} href={item.href} className="font-semibold text-brand-500">
