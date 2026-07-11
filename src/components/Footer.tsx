@@ -48,11 +48,11 @@ export function Footer() {
             <Image
               src="/logo.png"
               alt="Globalco"
-              width={150}
-              height={32}
-              className="h-7 w-auto dark:brightness-0 dark:invert"
+              width={278}
+              height={60}
+              className="h-12 w-auto dark:brightness-0 dark:invert"
             />
-            <p className="mt-3 max-w-xs text-sm text-muted">
+            <p className="mt-4 max-w-xs text-sm text-muted">
               The Global Coordination Center of Human + Machine Intelligence.
             </p>
           </div>
@@ -63,7 +63,7 @@ export function Footer() {
 
           {/* Locations */}
           <div className="col-span-2 lg:col-span-1">
-            <h3 className="text-sm font-semibold text-foreground">Locations</h3>
+            <h3 className="text-base font-semibold text-foreground">Locations</h3>
             <ul className="mt-3 space-y-3">
               {LOCATIONS.map((loc) => (
                 <li key={loc.country}>
@@ -93,13 +93,13 @@ export function Footer() {
 function FooterCol({ title, items }: { title: string; items: string[] }) {
   return (
     <div>
-      <h3 className="text-sm font-semibold text-foreground">{title}</h3>
-      <ul className="mt-3 space-y-2">
+      <h3 className="text-base font-semibold text-foreground">{title}</h3>
+      <ul className="mt-3 space-y-2.5">
         {items.map((item) => (
           <li key={item}>
             <a
               href="https://www.globalco.com/"
-              className="text-sm text-muted transition hover:text-brand-500"
+              className="text-[15px] text-muted transition hover:text-brand-500"
             >
               {item}
             </a>

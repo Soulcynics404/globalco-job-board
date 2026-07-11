@@ -20,23 +20,23 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-surface/95 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6 lg:h-24">
         <Link href="/" className="flex items-center gap-2" aria-label="Globalco home">
           <Image
             src="/logo.png"
             alt="Globalco"
-            width={150}
-            height={32}
+            width={371}
+            height={80}
             priority
-            className="h-7 w-auto dark:brightness-0 dark:invert"
+            className="h-12 w-auto sm:h-14 lg:h-16 dark:brightness-0 dark:invert"
           />
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-6 text-sm font-medium text-muted lg:flex">
+        <nav className="hidden items-center gap-7 text-base font-medium text-foreground lg:flex">
           {NAV.map((item) =>
             item.active ? (
-              <Link key={item.label} href={item.href} className="text-brand-500">
+              <Link key={item.label} href={item.href} className="font-semibold text-brand-500">
                 {item.label}
               </Link>
             ) : (
@@ -51,12 +51,12 @@ export function Navbar() {
           )}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2.5">
           <SavedBadge />
           <ThemeToggle />
           <a
             href="https://www.globalco.com/"
-            className="hidden rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-brand-foreground transition hover:bg-brand-600 sm:inline-flex"
+            className="hidden rounded-lg bg-brand px-5 py-2.5 text-[15px] font-semibold text-brand-foreground transition hover:bg-brand-600 sm:inline-flex"
           >
             Talk to us ›
           </a>
