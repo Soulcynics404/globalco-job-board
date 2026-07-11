@@ -10,11 +10,11 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Globalco Careers — Open Positions",
+  title: "Career | Globalco",
   description:
     "Explore open roles at Globalco, the Global Coordination Center of Human + Machine Intelligence. Engineering, Data Science, Operations and more across our global offices.",
   openGraph: {
-    title: "Globalco Careers — Open Positions",
+    title: "Career | Globalco",
     description:
       "Explore open roles at Globalco across engineering, data science, operations and more.",
     type: "website",

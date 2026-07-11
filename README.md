@@ -12,7 +12,7 @@ Vercel through a GitHub Actions CI/CD pipeline.
 
 | Deliverable | Link |
 | --- | --- |
-| **Live demo (Vercel)** | _add after first deploy_ |
+| **Live demo (Vercel)** | https://globalco-job-board.vercel.app |
 | **GitHub repository** | https://github.com/soulcynics404/globalco-job-board |
 | **Feature documentation** | [`docs/FEATURES.md`](docs/FEATURES.md) |
 

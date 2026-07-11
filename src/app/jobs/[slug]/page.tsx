@@ -18,9 +18,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const job = getJob(slug);
-  if (!job) return { title: "Job not found — Globalco Careers" };
+  if (!job) return { title: "Job not found | Globalco" };
   return {
-    title: `${job.title} — Globalco Careers`,
+    title: `${job.title} | Globalco Careers`,
     description: job.summary,
   };
 }
